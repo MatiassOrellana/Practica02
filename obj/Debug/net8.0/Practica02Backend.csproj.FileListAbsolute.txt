@@ -134,3 +134,8 @@ C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\obj\Debug\net8.
 C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\obj\Debug\net8.0\Practica02Backend.pdb
 C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\obj\Debug\net8.0\Practica02Backend.genruntimeconfig.cache
 C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\obj\Debug\net8.0\ref\Practica02Backend.dll
+C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\bin\Debug\net8.0\Data\Seeders\Frameworks.json
+C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\bin\Debug\net8.0\Data\Seeders\Niveles.json
+C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\bin\Debug\net8.0\Data\Seeders\Pasatiempos.json
+C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\bin\Debug\net8.0\Data\Seeders\Perfil.json
+C:\Users\Matias\source\repos\Practica02Backend\Practica02Backend\obj\Debug\net8.0\Practica02Backend.sourcelink.json

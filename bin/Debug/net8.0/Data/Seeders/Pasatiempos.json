@@ -1,0 +1,39 @@
+[
+  {
+    "perfilId": 1,
+    "pasatiempo": "Jugar computador",
+    "descripcion": "Juego computador un rato para divertirme y para matar tiempos de aburrimiento"
+  },
+  {
+    "perfilId": 1,
+    "pasatiempo": "Ver videos",
+    "descripcion": "Me pongo a ver videos para dormir un poco"
+  },
+  {
+    "perfilId": 1,
+    "pasatiempo": "Leer para optimizar tiempos",
+    "descripcion": "a veces me pongo a leer siempre y cuando no esté transnochado en la micro"
+  },
+  {
+    "perfilId": 1,
+    "pasatiempo": "Tocar guitarra",
+    "descripcion": "A veces toco guitarra para desestresarme un poco"
+  },
+  {
+    "perfilId": 1,
+    "pasatiempo": "Salir",
+    "descripcion": "Tomo una selfie por semana, excepto si tengo muchas tareas"
+  },
+  {
+    "perfilId": 1,
+    "pasatiempo": "Ordenar mi pieza",
+    "descripcion": "Es muy comodo dormir en la cama ordenada, da menos calor"
+  },
+  {
+    "perfilId": 1,
+    "pasatiempo": "Hacer buenos hábitos para mejorar mi estado físico y mental",
+    "descripcion": "Me ayuda a que debo hacer y que no debo hacer"
+  }
+
+]
+

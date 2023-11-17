@@ -11,8 +11,8 @@ using Practica02Backend.Data;
 namespace Practica02Backend.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231117061137_Migrations")]
-    partial class Migrations
+    [Migration("20231117065903_migrations")]
+    partial class migrations
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
