@@ -1,5 +1,5 @@
 ﻿# Practica02
-Backend: rama del "main"
+Backend: rama del "master"
 1) cambiar la conexion de base de datos utilizado en microsoft sql server al suyo
 ubicado en el archivo appsettings.json en "connctionStrings"
 2) haga las migraciones con el comando
