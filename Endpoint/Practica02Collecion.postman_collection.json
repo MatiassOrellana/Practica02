@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "4690bd1d-264a-4942-8f30-a9973d0a5e31",
+		"name": "Practica02Collecion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25748462"
+	},
+	"item": [
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7161/api/Profile",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7161",
+					"path": [
+						"api",
+						"Profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
