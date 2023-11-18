@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 //import "Porfolio.css";
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow,TablePagination, Paper, List, ListItem, ListItemText} from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableCol,TablePagination, Paper, List, ListItem, ListItemText} from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 function Porfolio(){
@@ -42,80 +42,71 @@ function Porfolio(){
 
     return(
         <div>
-            <h1>Mi Perfil:</h1>
-            <h2 id = "Titulo">
-            {perfil.map(({ id, nombre, apellido}) => (
-                
-                <li key={id}>{nombre} {apellido}</li>
-                
-            ))}
-            </h2>
-            <h2 id = "Correo">
-            {perfil.map(({ id, correo}) => (
-                
-                <li key={id}>{correo}</li>
-                
-            ))}
-            </h2>
-            <h2 id = "Ubicacion">
-            {perfil.map(({ id, pais, ciudad}) => (
-                
-                <li key={id}>{ciudad}, {pais}</li>
-                
-            ))}
-            </h2>
-            <h2 id = "Descripcion">
-            {perfil.map(({ id, descripcion}) => (
-                
-                <li key={id}>{descripcion}</li>
-                
-            ))}
-            </h2>
-            <Paper>
-                <List>
-                    {perfil.map(({ id, frameworks}) => (
-                    <ListItem key={id}>
-                        <ListItemText
-                        secondary={
-                            <List>
-                              {frameworks.map(({ framework, nivel, anio }, index) => (
-                                <ListItem key={index}>
-                                  <ListItemText
-                                    primary={`Framework: ${framework}, Nivel: ${nivel}`}
-                                    secondary={`Año: ${anio}`}
-                                  />
-                                </ListItem>
-                              ))}
-                            </List>
-                          }
-                        />
-                    </ListItem>
-                    ))}
-                </List>
-            </Paper>
-            <Paper>
-                <List>
-                    {perfil.map(({ id, pasatiempos}) => (
-                    <ListItem key={id}>
-                        <ListItemText
-                        secondary={
-                            <List>
-                              {pasatiempos.map(({pasatiempo, descripcion}, index) => (
-                                <ListItem key={index}>
-                                  <ListItemText
-                                    primary={`Pasatiempo: ${pasatiempo}`}
-                                    secondary={`Descripción: ${descripcion}`}
-                                  />
-                                </ListItem>
-                              ))}
-                            </List>
-                          }
-                        />
-                    </ListItem>
-                    ))}
-                </List>
-            </Paper>
 
+            <TableContainer component={Paper}>
+   
+                {perfil.map(({ id, nombre, apellido, correo, pais, ciudad, descripcion, frameworks, pasatiempos}) => (
+                    <Table key={id}>
+                        <TableHead>
+                            <TableRow>
+                                <TableCell><h1>{nombre} {apellido}</h1></TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell><h2>Correo: {correo}</h2></TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell><h2>Ubicación: {ciudad}, {pais}</h2></TableCell>
+                            </TableRow>
+                        
+                        </TableHead>
+                        <TableBody>
+
+                            <TableRow>
+                                <TableCell><h2>Informacion Personal: </h2>{descripcion}</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <h2>Frameworks: 
+                                        <ListItemText
+                                        secondary={
+                                            <List>
+                                            {frameworks.map(({ framework, nivel, anio }, index) => (
+                                                <ListItem key={index}>
+                                                    <ListItemText>
+                                                        <h3>{framework}, {nivel}</h3>
+                                                        {anio}
+                                                    </ListItemText>
+                                                </ListItem>
+                                            ))}
+                                            </List>
+                                        }
+                                        />
+                                    </h2>    
+                                    <h2>Pasatiempos:       
+                                        <ListItemText
+                                        secondary={
+                                            <List>
+                                            {pasatiempos.map(({ pasatiempo, descripcion }, index) => (
+                                                <ListItem key={index}>
+                                                    <ListItemText>
+                                                        <h3>{pasatiempo}</h3>
+                                                        {descripcion}
+                                                        
+                                                    </ListItemText>
+                                                </ListItem>
+                                            ))}
+                                            </List>
+                                        }
+                                        />
+                                    </h2>
+                                </TableCell>
+                            </TableRow>
+
+                        </TableBody>
+                    </Table>
+                ))}
+   
+            </TableContainer>
         </div>
     );
 
