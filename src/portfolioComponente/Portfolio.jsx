@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-//import "Porfolio.css";
+import "./Portfolio.css";
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableCol,TablePagination, Paper, List, ListItem, ListItemText} from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import PerfilImage from "../Images/Perfil.jpeg";
+import CorreoLogo from "../Images/LogoCorreo.jpg";
+import UbicacionLogo from "../Images/LogoUbicacion.png";
 
 function Porfolio(){
     
@@ -41,21 +44,38 @@ function Porfolio(){
 
 
     return(
-        <div>
+        <div style={{ margin: '40px'}}>
 
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} >
    
                 {perfil.map(({ id, nombre, apellido, correo, pais, ciudad, descripcion, frameworks, pasatiempos}) => (
                     <Table key={id}>
                         <TableHead>
                             <TableRow>
-                                <TableCell><h1>{nombre} {apellido}</h1></TableCell>
+                                <TableCell>
+                                <div>
+                                    <h1>
+                                    <img src={PerfilImage} alt="PerfilImagen" id="perfilFoto" style={{ marginRight: '10px', width: '60px', borderRadius: '50%'}}/> 
+                                     {nombre} {apellido}
+                                    </h1>
+                                </div>
+                                </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell><h2>Correo: {correo}</h2></TableCell>
+                                <TableCell>
+                                    <h2>
+                                        <img src={CorreoLogo} alt="CorreoImagen" id="CorreoFoto" style={{ marginRight: '20px', width: '50px'}}/> 
+                                        {correo}
+                                    </h2>
+                                </TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell><h2>Ubicación: {ciudad}, {pais}</h2></TableCell>
+                                <TableCell>
+                                    <h2>
+                                        <img src={UbicacionLogo} alt="UbicacionImagen" id="UbicacionFoto" style={{ marginRight: '20px', width: '50px'}}/> 
+                                        {ciudad}, {pais}
+                                    </h2>
+                                </TableCell>
                             </TableRow>
                         
                         </TableHead>
@@ -69,7 +89,7 @@ function Porfolio(){
                                     <h2>Frameworks: 
                                         <ListItemText
                                         secondary={
-                                            <List>
+                                            <List style={{marginLeft: '10px'}}>
                                             {frameworks.map(({ framework, nivel, anio }, index) => (
                                                 <ListItem key={index}>
                                                     <ListItemText>
@@ -85,7 +105,7 @@ function Porfolio(){
                                     <h2>Pasatiempos:       
                                         <ListItemText
                                         secondary={
-                                            <List>
+                                            <List style={{marginLeft: '10px'}}>
                                             {pasatiempos.map(({ pasatiempo, descripcion }, index) => (
                                                 <ListItem key={index}>
                                                     <ListItemText>

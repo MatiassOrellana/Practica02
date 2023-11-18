@@ -1,2 +1,5 @@
-
+.perfilFoto {
+    width: 150px; /* Ancho deseado */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
 
