@@ -10,4 +10,6 @@ en la carpeta de endponits y dentro de esa carpeta está el archivo, lo carga
 en postman
 4) 
 
-Frontend:
+Frontend: rama del "masterfront"
+1) antes de ejecutarlo, inicie el backend
+2) 
